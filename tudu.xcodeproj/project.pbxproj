@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09144A7313C2997E00388B00 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09144A7213C2997E00388B00 /* Entitlements.plist */; };
+		092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B213A1D7EB00DA740F /* CFNetwork.framework */; };
+		092354B513A1D7F000DA740F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B413A1D7F000DA740F /* SystemConfiguration.framework */; };
+		092354B713A1D83C00DA740F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B613A1D83C00DA740F /* MobileCoreServices.framework */; };
+		094ACA0014367ACD008398F8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094AC9FF14367ACD008398F8 /* Parse.framework */; };
+		095ACE8613C68EA300566243 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095ACE8513C68EA300566243 /* AudioToolbox.framework */; };
+		099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */; };
+		09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07113A1D52D009C3FCF /* UIKit.framework */; };
+		09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
+		09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09ABC07A13A1D52D009C3FCF /* InfoPlist.strings */; };
+		09ABC07F13A1D52D009C3FCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ABC07E13A1D52D009C3FCF /* main.m */; };
+		09ABC08813A1D52E009C3FCF /* ParseStarterProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */; };
+		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
+		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
+		4998650515BF305000803E05 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4998650415BF305000803E05 /* StoreKit.framework */; };
+		743D7B6D157DA60100084B67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743D7B6C157DA60100084B67 /* CoreGraphics.framework */; };
+		8112B17F19741BE700CA11B8 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8112B17E19741BE700CA11B8 /* ParseFacebookUtils.framework */; };
+		817AD67C196B009E0014C796 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817AD67B196B009E0014C796 /* Bolts.framework */; };
+		A11D19DD1A97FE3D000909A8 /* TuduAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A11D19DC1A97FE3D000909A8 /* TuduAppDelegate.m */; };
+		A160587619D33B1400C61928 /* TuduProfileTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A160587519D33B1400C61928 /* TuduProfileTableHeaderView.m */; };
+		A160587D19D8F7AF00C61928 /* TuduCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A160587C19D8F7AE00C61928 /* TuduCommentsViewController.m */; };
+		A19C838E19C55EBA00993781 /* BlueJeansBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A19C838D19C55EBA00993781 /* BlueJeansBackground.jpg */; };
+		A19C839119C7482200993781 /* GlassView.m in Sources */ = {isa = PBXBuildFile; fileRef = A19C839019C7482200993781 /* GlassView.m */; };
+		A19C839519C7777E00993781 /* ButtonFooterCell.png in Resources */ = {isa = PBXBuildFile; fileRef = A19C839419C7777E00993781 /* ButtonFooterCell.png */; };
+		A19C839719C8D77200993781 /* ButtonFooterCellClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = A19C839619C8D77200993781 /* ButtonFooterCellClicked.png */; };
+		A19C839B19C8ED1500993781 /* BackgroundWood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A19C839A19C8ED1500993781 /* BackgroundWood.jpg */; };
+		A19C839D19CA0C6D00993781 /* TuduLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A19C839C19CA0C6D00993781 /* TuduLogo.png */; };
+		A19C839F19CA0D8D00993781 /* StainlessSteel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A19C839E19CA0D8D00993781 /* StainlessSteel.jpg */; };
+		A1A22B1419B8FB3100F76A00 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A22B1319B8FB3100F76A00 /* FacebookSDK.framework */; };
+		A1A22B1719B92B7000F76A00 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A22B1619B92B7000F76A00 /* MBProgressHUD.m */; };
+		A1A22B1A19B938E900F76A00 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A22B1919B938E900F76A00 /* Reachability.m */; };
+		A1A22B1D19B93DFE00F76A00 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A22B1C19B93DFE00F76A00 /* UIImage+ImageEffects.m */; };
+		A1A22B1F19B941F000F76A00 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A22B1E19B941F000F76A00 /* Accelerate.framework */; };
+		A1A34C1419CB39790043A524 /* TuduScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A34C1319CB39780043A524 /* TuduScrollView.m */; };
+		A1A34C1719CC86170043A524 /* TuduNumberTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A34C1619CC86170043A524 /* TuduNumberTitleButton.m */; };
+		A1A34C1919CDCEB80043A524 /* Basketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1A34C1819CDCEB80043A524 /* Basketball.jpg */; };
+		A1A34C1C19CDDAE30043A524 /* ThemeAndStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A34C1B19CDDAE30043A524 /* ThemeAndStyle.m */; };
+		A1A34C1F19CE13EE0043A524 /* TuduEventEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A34C1E19CE13EE0043A524 /* TuduEventEditorViewController.m */; };
+		A1A734B619CFAD40002077D8 /* TuduActivityTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A734B519CFAD40002077D8 /* TuduActivityTableView.m */; };
+		A1A734BA19CFD379002077D8 /* TuduBaseTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A734B919CFD379002077D8 /* TuduBaseTextCell.m */; };
+		A1A734BD19CFD4CC002077D8 /* TuduActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A734BC19CFD4CC002077D8 /* TuduActivityCell.m */; };
+		A1A734C019D0ADBF002077D8 /* TuduMultiUserActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A734BF19D0ADBF002077D8 /* TuduMultiUserActivityCell.m */; };
+		A1AF77D719BB676F00535C45 /* EventDisplayPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77D619BB676F00535C45 /* EventDisplayPlaceholder.png */; };
+		A1AF77D919BB6B4400535C45 /* buttonLike.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77D819BB6B4400535C45 /* buttonLike.png */; };
+		A1AF77DB19BB6B6200535C45 /* buttonLikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77DA19BB6B6200535C45 /* buttonLikeSelected.png */; };
+		A1AF77DD19BB6C0100535C45 /* BackgroundComments.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77DC19BB6C0100535C45 /* BackgroundComments.png */; };
+		A1AF77DF19BB7D1500535C45 /* AvatarPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77DE19BB7D1500535C45 /* AvatarPlaceholder.png */; };
+		A1AF77E119BC396500535C45 /* IconComment.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77E019BC396500535C45 /* IconComment.png */; };
+		A1AF77E319BF595500535C45 /* AttendingCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77E219BF595400535C45 /* AttendingCircle.png */; };
+		A1AF77E519BF948A00535C45 /* AttendingTicket.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77E419BF948A00535C45 /* AttendingTicket.png */; };
+		A1AF77E719BF980E00535C45 /* ButtonFollow.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77E619BF980E00535C45 /* ButtonFollow.png */; };
+		A1AF77E919BF984200535C45 /* ButtonFollowing.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77E819BF984200535C45 /* ButtonFollowing.png */; };
+		A1AF77EC19BFB77D00535C45 /* TuduInviteFriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF77EB19BFB77D00535C45 /* TuduInviteFriendsListViewController.m */; };
+		A1AF77EF19BFB80900535C45 /* TuduFollowFriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF77EE19BFB80900535C45 /* TuduFollowFriendsListViewController.m */; };
+		A1AF77FD19C0D98600535C45 /* ButtonInvite.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77FB19C0D98600535C45 /* ButtonInvite.png */; };
+		A1AF77FE19C0D98600535C45 /* ButtonInvited.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77FC19C0D98600535C45 /* ButtonInvited.png */; };
+		A1AF780019C0DB3A00535C45 /* ButtonNext.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF77FF19C0DB3A00535C45 /* ButtonNext.png */; };
+		A1AF780319C0DD0800535C45 /* TuduReviewEventCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF780219C0DD0800535C45 /* TuduReviewEventCreationViewController.m */; };
+		A1AF780519C15BF500535C45 /* BackgroundLeather.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF780419C15BF500535C45 /* BackgroundLeather.png */; };
+		A1AF780719C168A200535C45 /* DefaultDisplayCellBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1AF780619C168A200535C45 /* DefaultDisplayCellBackground.jpg */; };
+		A1AF780919C1748100535C45 /* IconHome.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF780819C1748100535C45 /* IconHome.png */; };
+		A1AF780B19C175F000535C45 /* IconActivityTimeline.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF780A19C175F000535C45 /* IconActivityTimeline.png */; };
+		A1AF780F19C176F400535C45 /* IconCreate.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF780C19C176F400535C45 /* IconCreate.png */; };
+		A1AF781019C176F400535C45 /* IconProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF780D19C176F400535C45 /* IconProfile.png */; };
+		A1AF781119C176F400535C45 /* IconSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF780E19C176F400535C45 /* IconSearch.png */; };
+		A1AF781419C1776A00535C45 /* TuduEventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF781319C1776A00535C45 /* TuduEventDetailsViewController.m */; };
+		A1AF781719C29E5C00535C45 /* TuduInviteDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF781619C29E5C00535C45 /* TuduInviteDescriptionViewController.m */; };
+		A1AF781919C397C400535C45 /* BackgroundLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AF781819C397C300535C45 /* BackgroundLogin.png */; };
+		A1D00B6819B4D8D20076A542 /* TuduTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B6719B4D8D20076A542 /* TuduTabBarController.m */; };
+		A1D00B6B19B4DBA60076A542 /* TuduLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B6A19B4DBA60076A542 /* TuduLoginViewController.m */; };
+		A1D00B6E19B4DE730076A542 /* TuduEventCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B6D19B4DE730076A542 /* TuduEventCreatorViewController.m */; };
+		A1D00B7119B4E2440076A542 /* TuduWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B7019B4E2440076A542 /* TuduWelcomeViewController.m */; };
+		A1D00B7419B4E4810076A542 /* TuduSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B7319B4E4810076A542 /* TuduSearchViewController.m */; };
+		A1D00B7719B4E49A0076A542 /* TuduProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B7619B4E49A0076A542 /* TuduProfileViewController.m */; };
+		A1D00B7A19B4E4AE0076A542 /* TuduHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B7919B4E4AE0076A542 /* TuduHomeViewController.m */; };
+		A1D00B7D19B4E5280076A542 /* TuduActivityFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B7C19B4E5280076A542 /* TuduActivityFeedViewController.m */; };
+		A1D00B7E19B4E7B40076A542 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372FF521613CC3C002132AF /* Accounts.framework */; };
+		A1D00B7F19B4E7D20076A542 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372FF551613CC42002132AF /* Social.framework */; };
+		A1D00B8219B6ACC40076A542 /* EventFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B8119B6ACC40076A542 /* EventFooterCell.m */; };
+		A1D00B8519B6AD030076A542 /* EventHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B8419B6AD030076A542 /* EventHeaderView.m */; };
+		A1D00B8819B6AEB30076A542 /* TuduEventFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B8719B6AEB30076A542 /* TuduEventFeedViewController.m */; };
+		A1D00B8B19B6AF680076A542 /* TuduFriendSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B8A19B6AF680076A542 /* TuduFriendSelectorCell.m */; };
+		A1D00B8E19B6AFB20076A542 /* TuduFollowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B8D19B6AFB20076A542 /* TuduFollowCell.m */; };
+		A1D00B9119B6B0300076A542 /* TuduFriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B9019B6B0300076A542 /* TuduFriendsListViewController.m */; };
+		A1D00B9419B6B0F00076A542 /* TuduInviteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B9319B6B0F00076A542 /* TuduInviteCell.m */; };
+		A1D00B9719B6B1CE0076A542 /* TuduNextButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B9619B6B1CE0076A542 /* TuduNextButtonItem.m */; };
+		A1D00B9A19B6B20E0076A542 /* TuduProfileImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B9919B6B20E0076A542 /* TuduProfileImageView.m */; };
+		A1D00B9D19B6B3240076A542 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B9C19B6B3240076A542 /* Utility.m */; };
+		A1D00BA019B6B44F0076A542 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00B9F19B6B44F0076A542 /* Constants.m */; };
+		A1D00BA319B6B4C40076A542 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00BA219B6B4C40076A542 /* UIImage+ResizeAdditions.m */; };
+		A1D00BA819B6B5880076A542 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00BA719B6B5880076A542 /* UIImage+RoundedCornerAdditions.m */; };
+		A1D00BAB19B6B5B20076A542 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00BAA19B6B5B20076A542 /* UIImage+AlphaAdditions.m */; };
+		A1D00BAE19B6B5D50076A542 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00BAD19B6B5D50076A542 /* UIImage+Alpha.m */; };
+		A1D00BB119B6E4700076A542 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00BB019B6E4700076A542 /* TTTTimeIntervalFormatter.m */; };
+		A1D00BB419B6E5B70076A542 /* EventDisplayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00BB319B6E5B70076A542 /* EventDisplayCell.m */; };
+		A1D00BB719B6E98A0076A542 /* TuduCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D00BB619B6E98A0076A542 /* TuduCache.m */; };
+		A1D00BBB19B6FA750076A542 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D00BB819B6FA750076A542 /* AddressBook.framework */; };
+		A1D00BBC19B6FA750076A542 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D00BB919B6FA750076A542 /* AddressBookUI.framework */; };
+		A1D00BBD19B6FA750076A542 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D00BBA19B6FA750076A542 /* MessageUI.framework */; };
+		C4C51B571613CE0800959FDC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B541613CE0800959FDC /* Default.png */; };
+		C4C51B581613CE0800959FDC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B551613CE0800959FDC /* Default-568h@2x.png */; };
+		C4C51B591613CE0800959FDC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B561613CE0800959FDC /* Default@2x.png */; };
+		DD952FCB16E7F5CF00470144 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E18B1E1624CB5700B17A67 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09144A7213C2997E00388B00 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = ../tuduSrc/Entitlements.plist; sourceTree = "<group>"; };
+		092354B213A1D7EB00DA740F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		092354B413A1D7F000DA740F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		092354B613A1D83C00DA740F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		094AC9FF14367ACD008398F8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		095ACE8513C68EA300566243 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		09ABC06D13A1D52D009C3FCF /* tudu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tudu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09ABC07113A1D52D009C3FCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09ABC07313A1D52D009C3FCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09ABC07913A1D52D009C3FCF /* tudu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "tudu-Info.plist"; path = "../tuduSrc/tudu-Info.plist"; sourceTree = "<group>"; };
+		09ABC07B13A1D52D009C3FCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09ABC07D13A1D52D009C3FCF /* tudu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "tudu-Prefix.pch"; path = "../tuduSrc/tudu-Prefix.pch"; sourceTree = "<group>"; };
+		09ABC07E13A1D52D009C3FCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../tuduSrc/main.m; sourceTree = "<group>"; };
+		09ABC08013A1D52D009C3FCF /* TuduAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TuduAppDelegate.h; path = ../tuduSrc/TuduAppDelegate.h; sourceTree = "<group>"; };
+		09ABC08613A1D52E009C3FCF /* ParseStarterProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParseStarterProjectViewController.h; path = ../tuduSrc/ParseStarterProjectViewController.h; sourceTree = "<group>"; };
+		09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ParseStarterProjectViewController.m; path = ../tuduSrc/ParseStarterProjectViewController.m; sourceTree = "<group>"; };
+		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4998650415BF305000803E05 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6332375315E438E900AE2736 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6372FF521613CC3C002132AF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		6372FF551613CC42002132AF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6372FF571613CC47002132AF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		743D7B6C157DA60100084B67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8112B17E19741BE700CA11B8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		817AD67B196B009E0014C796 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		97E18B1E1624CB5700B17A67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A11D19DC1A97FE3D000909A8 /* TuduAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduAppDelegate.m; path = ../tuduSrc/TuduAppDelegate.m; sourceTree = "<group>"; };
+		A160587419D33AEC00C61928 /* TuduProfileTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduProfileTableHeaderView.h; path = ../tuduSrc/TuduProfileTableHeaderView.h; sourceTree = "<group>"; };
+		A160587519D33B1400C61928 /* TuduProfileTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduProfileTableHeaderView.m; path = ../tuduSrc/TuduProfileTableHeaderView.m; sourceTree = "<group>"; };
+		A160587B19D8F76B00C61928 /* TuduCommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduCommentsViewController.h; path = ../tuduSrc/TuduCommentsViewController.h; sourceTree = "<group>"; };
+		A160587C19D8F7AE00C61928 /* TuduCommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduCommentsViewController.m; path = ../tuduSrc/TuduCommentsViewController.m; sourceTree = "<group>"; };
+		A19C838D19C55EBA00993781 /* BlueJeansBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BlueJeansBackground.jpg; path = ../tuduSrc/BlueJeansBackground.jpg; sourceTree = "<group>"; };
+		A19C838F19C7482200993781 /* GlassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlassView.h; path = ../tuduSrc/GlassView.h; sourceTree = "<group>"; };
+		A19C839019C7482200993781 /* GlassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlassView.m; path = ../tuduSrc/GlassView.m; sourceTree = "<group>"; };
+		A19C839419C7777E00993781 /* ButtonFooterCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonFooterCell.png; path = ../tuduSrc/ButtonFooterCell.png; sourceTree = "<group>"; };
+		A19C839619C8D77200993781 /* ButtonFooterCellClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonFooterCellClicked.png; path = ../tuduSrc/ButtonFooterCellClicked.png; sourceTree = "<group>"; };
+		A19C839A19C8ED1500993781 /* BackgroundWood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundWood.jpg; path = ../tuduSrc/BackgroundWood.jpg; sourceTree = "<group>"; };
+		A19C839C19CA0C6D00993781 /* TuduLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TuduLogo.png; path = ../tuduSrc/TuduLogo.png; sourceTree = "<group>"; };
+		A19C839E19CA0D8D00993781 /* StainlessSteel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StainlessSteel.jpg; path = ../tuduSrc/StainlessSteel.jpg; sourceTree = "<group>"; };
+		A1A22B1319B8FB3100F76A00 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		A1A22B1519B92B7000F76A00 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../tuduSrc/MBProgressHUD.h; sourceTree = "<group>"; };
+		A1A22B1619B92B7000F76A00 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../tuduSrc/MBProgressHUD.m; sourceTree = "<group>"; };
+		A1A22B1819B938E900F76A00 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../tuduSrc/Reachability.h; sourceTree = "<group>"; };
+		A1A22B1919B938E900F76A00 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../tuduSrc/Reachability.m; sourceTree = "<group>"; };
+		A1A22B1B19B93DFE00F76A00 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "../tuduSrc/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		A1A22B1C19B93DFE00F76A00 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../tuduSrc/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		A1A22B1E19B941F000F76A00 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A1A34C1219CB39780043A524 /* TuduScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduScrollView.h; path = ../tuduSrc/TuduScrollView.h; sourceTree = "<group>"; };
+		A1A34C1319CB39780043A524 /* TuduScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduScrollView.m; path = ../tuduSrc/TuduScrollView.m; sourceTree = "<group>"; };
+		A1A34C1519CC86170043A524 /* TuduNumberTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduNumberTitleButton.h; path = ../tuduSrc/TuduNumberTitleButton.h; sourceTree = "<group>"; };
+		A1A34C1619CC86170043A524 /* TuduNumberTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduNumberTitleButton.m; path = ../tuduSrc/TuduNumberTitleButton.m; sourceTree = "<group>"; };
+		A1A34C1819CDCEB80043A524 /* Basketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Basketball.jpg; path = ../tuduSrc/Basketball.jpg; sourceTree = "<group>"; };
+		A1A34C1A19CDDAE30043A524 /* ThemeAndStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeAndStyle.h; path = ../tuduSrc/ThemeAndStyle.h; sourceTree = "<group>"; };
+		A1A34C1B19CDDAE30043A524 /* ThemeAndStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeAndStyle.m; path = ../tuduSrc/ThemeAndStyle.m; sourceTree = "<group>"; };
+		A1A34C1D19CE13EE0043A524 /* TuduEventEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduEventEditorViewController.h; path = ../tuduSrc/TuduEventEditorViewController.h; sourceTree = "<group>"; };
+		A1A34C1E19CE13EE0043A524 /* TuduEventEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduEventEditorViewController.m; path = ../tuduSrc/TuduEventEditorViewController.m; sourceTree = "<group>"; };
+		A1A734B419CFAD07002077D8 /* TuduActivityTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduActivityTableView.h; path = ../tuduSrc/TuduActivityTableView.h; sourceTree = "<group>"; };
+		A1A734B519CFAD40002077D8 /* TuduActivityTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduActivityTableView.m; path = ../tuduSrc/TuduActivityTableView.m; sourceTree = "<group>"; };
+		A1A734B819CFD276002077D8 /* TuduBaseTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduBaseTextCell.h; path = ../tuduSrc/TuduBaseTextCell.h; sourceTree = "<group>"; };
+		A1A734B919CFD379002077D8 /* TuduBaseTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduBaseTextCell.m; path = ../tuduSrc/TuduBaseTextCell.m; sourceTree = "<group>"; };
+		A1A734BB19CFD463002077D8 /* TuduActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduActivityCell.h; path = ../tuduSrc/TuduActivityCell.h; sourceTree = "<group>"; };
+		A1A734BC19CFD4CC002077D8 /* TuduActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduActivityCell.m; path = ../tuduSrc/TuduActivityCell.m; sourceTree = "<group>"; };
+		A1A734BE19D0AB46002077D8 /* TuduMultiUserActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduMultiUserActivityCell.h; path = ../tuduSrc/TuduMultiUserActivityCell.h; sourceTree = "<group>"; };
+		A1A734BF19D0ADBF002077D8 /* TuduMultiUserActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduMultiUserActivityCell.m; path = ../tuduSrc/TuduMultiUserActivityCell.m; sourceTree = "<group>"; };
+		A1AF77D619BB676F00535C45 /* EventDisplayPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EventDisplayPlaceholder.png; path = ../tuduSrc/EventDisplayPlaceholder.png; sourceTree = "<group>"; };
+		A1AF77D819BB6B4400535C45 /* buttonLike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonLike.png; path = ../tuduSrc/buttonLike.png; sourceTree = "<group>"; };
+		A1AF77DA19BB6B6200535C45 /* buttonLikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonLikeSelected.png; path = ../tuduSrc/buttonLikeSelected.png; sourceTree = "<group>"; };
+		A1AF77DC19BB6C0100535C45 /* BackgroundComments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundComments.png; path = ../tuduSrc/BackgroundComments.png; sourceTree = "<group>"; };
+		A1AF77DE19BB7D1500535C45 /* AvatarPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AvatarPlaceholder.png; path = ../tuduSrc/AvatarPlaceholder.png; sourceTree = "<group>"; };
+		A1AF77E019BC396500535C45 /* IconComment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconComment.png; path = ../tuduSrc/IconComment.png; sourceTree = "<group>"; };
+		A1AF77E219BF595400535C45 /* AttendingCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AttendingCircle.png; path = ../tuduSrc/AttendingCircle.png; sourceTree = "<group>"; };
+		A1AF77E419BF948A00535C45 /* AttendingTicket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AttendingTicket.png; path = ../tuduSrc/AttendingTicket.png; sourceTree = "<group>"; };
+		A1AF77E619BF980E00535C45 /* ButtonFollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonFollow.png; path = ../tuduSrc/ButtonFollow.png; sourceTree = "<group>"; };
+		A1AF77E819BF984200535C45 /* ButtonFollowing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonFollowing.png; path = ../tuduSrc/ButtonFollowing.png; sourceTree = "<group>"; };
+		A1AF77EA19BFB77D00535C45 /* TuduInviteFriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduInviteFriendsListViewController.h; path = ../tuduSrc/TuduInviteFriendsListViewController.h; sourceTree = "<group>"; };
+		A1AF77EB19BFB77D00535C45 /* TuduInviteFriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduInviteFriendsListViewController.m; path = ../tuduSrc/TuduInviteFriendsListViewController.m; sourceTree = "<group>"; };
+		A1AF77ED19BFB80900535C45 /* TuduFollowFriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduFollowFriendsListViewController.h; path = ../tuduSrc/TuduFollowFriendsListViewController.h; sourceTree = "<group>"; };
+		A1AF77EE19BFB80900535C45 /* TuduFollowFriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduFollowFriendsListViewController.m; path = ../tuduSrc/TuduFollowFriendsListViewController.m; sourceTree = "<group>"; };
+		A1AF77FB19C0D98600535C45 /* ButtonInvite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonInvite.png; path = ../tuduSrc/ButtonInvite.png; sourceTree = "<group>"; };
+		A1AF77FC19C0D98600535C45 /* ButtonInvited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonInvited.png; path = ../tuduSrc/ButtonInvited.png; sourceTree = "<group>"; };
+		A1AF77FF19C0DB3A00535C45 /* ButtonNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonNext.png; path = ../tuduSrc/ButtonNext.png; sourceTree = "<group>"; };
+		A1AF780119C0DD0800535C45 /* TuduReviewEventCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduReviewEventCreationViewController.h; path = ../tuduSrc/TuduReviewEventCreationViewController.h; sourceTree = "<group>"; };
+		A1AF780219C0DD0800535C45 /* TuduReviewEventCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduReviewEventCreationViewController.m; path = ../tuduSrc/TuduReviewEventCreationViewController.m; sourceTree = "<group>"; };
+		A1AF780419C15BF500535C45 /* BackgroundLeather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundLeather.png; path = ../tuduSrc/BackgroundLeather.png; sourceTree = "<group>"; };
+		A1AF780619C168A200535C45 /* DefaultDisplayCellBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DefaultDisplayCellBackground.jpg; path = ../tuduSrc/DefaultDisplayCellBackground.jpg; sourceTree = "<group>"; };
+		A1AF780819C1748100535C45 /* IconHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconHome.png; path = ../tuduSrc/IconHome.png; sourceTree = "<group>"; };
+		A1AF780A19C175F000535C45 /* IconActivityTimeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconActivityTimeline.png; path = ../tuduSrc/IconActivityTimeline.png; sourceTree = "<group>"; };
+		A1AF780C19C176F400535C45 /* IconCreate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconCreate.png; path = ../tuduSrc/IconCreate.png; sourceTree = "<group>"; };
+		A1AF780D19C176F400535C45 /* IconProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconProfile.png; path = ../tuduSrc/IconProfile.png; sourceTree = "<group>"; };
+		A1AF780E19C176F400535C45 /* IconSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconSearch.png; path = ../tuduSrc/IconSearch.png; sourceTree = "<group>"; };
+		A1AF781219C1776A00535C45 /* TuduEventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduEventDetailsViewController.h; path = ../tuduSrc/TuduEventDetailsViewController.h; sourceTree = "<group>"; };
+		A1AF781319C1776A00535C45 /* TuduEventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduEventDetailsViewController.m; path = ../tuduSrc/TuduEventDetailsViewController.m; sourceTree = "<group>"; };
+		A1AF781519C29E5C00535C45 /* TuduInviteDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduInviteDescriptionViewController.h; path = ../tuduSrc/TuduInviteDescriptionViewController.h; sourceTree = "<group>"; };
+		A1AF781619C29E5C00535C45 /* TuduInviteDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduInviteDescriptionViewController.m; path = ../tuduSrc/TuduInviteDescriptionViewController.m; sourceTree = "<group>"; };
+		A1AF781819C397C300535C45 /* BackgroundLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundLogin.png; path = ../tuduSrc/BackgroundLogin.png; sourceTree = "<group>"; };
+		A1D00B6619B4D8D20076A542 /* TuduTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduTabBarController.h; path = ../tuduSrc/TuduTabBarController.h; sourceTree = "<group>"; };
+		A1D00B6719B4D8D20076A542 /* TuduTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduTabBarController.m; path = ../tuduSrc/TuduTabBarController.m; sourceTree = "<group>"; };
+		A1D00B6919B4DBA60076A542 /* TuduLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduLoginViewController.h; path = ../tuduSrc/TuduLoginViewController.h; sourceTree = "<group>"; };
+		A1D00B6A19B4DBA60076A542 /* TuduLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduLoginViewController.m; path = ../tuduSrc/TuduLoginViewController.m; sourceTree = "<group>"; };
+		A1D00B6C19B4DE730076A542 /* TuduEventCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduEventCreatorViewController.h; path = ../tuduSrc/TuduEventCreatorViewController.h; sourceTree = "<group>"; };
+		A1D00B6D19B4DE730076A542 /* TuduEventCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduEventCreatorViewController.m; path = ../tuduSrc/TuduEventCreatorViewController.m; sourceTree = "<group>"; };
+		A1D00B6F19B4E2440076A542 /* TuduWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduWelcomeViewController.h; path = ../tuduSrc/TuduWelcomeViewController.h; sourceTree = "<group>"; };
+		A1D00B7019B4E2440076A542 /* TuduWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduWelcomeViewController.m; path = ../tuduSrc/TuduWelcomeViewController.m; sourceTree = "<group>"; };
+		A1D00B7219B4E4810076A542 /* TuduSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduSearchViewController.h; path = ../tuduSrc/TuduSearchViewController.h; sourceTree = "<group>"; };
+		A1D00B7319B4E4810076A542 /* TuduSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduSearchViewController.m; path = ../tuduSrc/TuduSearchViewController.m; sourceTree = "<group>"; };
+		A1D00B7519B4E49A0076A542 /* TuduProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduProfileViewController.h; path = ../tuduSrc/TuduProfileViewController.h; sourceTree = "<group>"; };
+		A1D00B7619B4E49A0076A542 /* TuduProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduProfileViewController.m; path = ../tuduSrc/TuduProfileViewController.m; sourceTree = "<group>"; };
+		A1D00B7819B4E4AE0076A542 /* TuduHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduHomeViewController.h; path = ../tuduSrc/TuduHomeViewController.h; sourceTree = "<group>"; };
+		A1D00B7919B4E4AE0076A542 /* TuduHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduHomeViewController.m; path = ../tuduSrc/TuduHomeViewController.m; sourceTree = "<group>"; };
+		A1D00B7B19B4E5280076A542 /* TuduActivityFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduActivityFeedViewController.h; path = ../tuduSrc/TuduActivityFeedViewController.h; sourceTree = "<group>"; };
+		A1D00B7C19B4E5280076A542 /* TuduActivityFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduActivityFeedViewController.m; path = ../tuduSrc/TuduActivityFeedViewController.m; sourceTree = "<group>"; };
+		A1D00B8019B6AC210076A542 /* EventFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventFooterCell.h; path = ../tuduSrc/EventFooterCell.h; sourceTree = "<group>"; };
+		A1D00B8119B6ACC40076A542 /* EventFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventFooterCell.m; path = ../tuduSrc/EventFooterCell.m; sourceTree = "<group>"; };
+		A1D00B8319B6AD030076A542 /* EventHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventHeaderView.h; path = ../tuduSrc/EventHeaderView.h; sourceTree = "<group>"; };
+		A1D00B8419B6AD030076A542 /* EventHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventHeaderView.m; path = ../tuduSrc/EventHeaderView.m; sourceTree = "<group>"; };
+		A1D00B8619B6AEB30076A542 /* TuduEventFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduEventFeedViewController.h; path = ../tuduSrc/TuduEventFeedViewController.h; sourceTree = "<group>"; };
+		A1D00B8719B6AEB30076A542 /* TuduEventFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduEventFeedViewController.m; path = ../tuduSrc/TuduEventFeedViewController.m; sourceTree = "<group>"; };
+		A1D00B8919B6AF680076A542 /* TuduFriendSelectorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduFriendSelectorCell.h; path = ../tuduSrc/TuduFriendSelectorCell.h; sourceTree = "<group>"; };
+		A1D00B8A19B6AF680076A542 /* TuduFriendSelectorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduFriendSelectorCell.m; path = ../tuduSrc/TuduFriendSelectorCell.m; sourceTree = "<group>"; };
+		A1D00B8C19B6AFB20076A542 /* TuduFollowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduFollowCell.h; path = ../tuduSrc/TuduFollowCell.h; sourceTree = "<group>"; };
+		A1D00B8D19B6AFB20076A542 /* TuduFollowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduFollowCell.m; path = ../tuduSrc/TuduFollowCell.m; sourceTree = "<group>"; };
+		A1D00B8F19B6B0300076A542 /* TuduFriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduFriendsListViewController.h; path = ../tuduSrc/TuduFriendsListViewController.h; sourceTree = "<group>"; };
+		A1D00B9019B6B0300076A542 /* TuduFriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduFriendsListViewController.m; path = ../tuduSrc/TuduFriendsListViewController.m; sourceTree = "<group>"; };
+		A1D00B9219B6B0F00076A542 /* TuduInviteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduInviteCell.h; path = ../tuduSrc/TuduInviteCell.h; sourceTree = "<group>"; };
+		A1D00B9319B6B0F00076A542 /* TuduInviteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduInviteCell.m; path = ../tuduSrc/TuduInviteCell.m; sourceTree = "<group>"; };
+		A1D00B9519B6B1CE0076A542 /* TuduNextButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduNextButtonItem.h; path = ../tuduSrc/TuduNextButtonItem.h; sourceTree = "<group>"; };
+		A1D00B9619B6B1CE0076A542 /* TuduNextButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduNextButtonItem.m; path = ../tuduSrc/TuduNextButtonItem.m; sourceTree = "<group>"; };
+		A1D00B9819B6B20E0076A542 /* TuduProfileImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduProfileImageView.h; path = ../tuduSrc/TuduProfileImageView.h; sourceTree = "<group>"; };
+		A1D00B9919B6B20E0076A542 /* TuduProfileImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduProfileImageView.m; path = ../tuduSrc/TuduProfileImageView.m; sourceTree = "<group>"; };
+		A1D00B9B19B6B3240076A542 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = ../tuduSrc/Utility.h; sourceTree = "<group>"; };
+		A1D00B9C19B6B3240076A542 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = ../tuduSrc/Utility.m; sourceTree = "<group>"; };
+		A1D00B9E19B6B41D0076A542 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../tuduSrc/Constants.h; sourceTree = "<group>"; };
+		A1D00B9F19B6B44F0076A542 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../tuduSrc/Constants.m; sourceTree = "<group>"; };
+		A1D00BA119B6B4A70076A542 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ResizeAdditions.h"; path = "../tuduSrc/UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		A1D00BA219B6B4C40076A542 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ResizeAdditions.m"; path = "../tuduSrc/UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		A1D00BA619B6B5570076A542 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCornerAdditions.h"; path = "../tuduSrc/UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		A1D00BA719B6B5880076A542 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCornerAdditions.m"; path = "../tuduSrc/UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		A1D00BA919B6B5A70076A542 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+AlphaAdditions.h"; path = "../tuduSrc/UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		A1D00BAA19B6B5B20076A542 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+AlphaAdditions.m"; path = "../tuduSrc/UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		A1D00BAC19B6B5C30076A542 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Alpha.h"; path = "../tuduSrc/UIImage+Alpha.h"; sourceTree = "<group>"; };
+		A1D00BAD19B6B5D50076A542 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Alpha.m"; path = "../tuduSrc/UIImage+Alpha.m"; sourceTree = "<group>"; };
+		A1D00BAF19B6E4700076A542 /* TTTTimeIntervalFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTTimeIntervalFormatter.h; path = ../tuduSrc/TTTTimeIntervalFormatter.h; sourceTree = "<group>"; };
+		A1D00BB019B6E4700076A542 /* TTTTimeIntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTTimeIntervalFormatter.m; path = ../tuduSrc/TTTTimeIntervalFormatter.m; sourceTree = "<group>"; };
+		A1D00BB219B6E5B70076A542 /* EventDisplayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDisplayCell.h; path = ../tuduSrc/EventDisplayCell.h; sourceTree = "<group>"; };
+		A1D00BB319B6E5B70076A542 /* EventDisplayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDisplayCell.m; path = ../tuduSrc/EventDisplayCell.m; sourceTree = "<group>"; };
+		A1D00BB519B6E98A0076A542 /* TuduCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuduCache.h; path = ../tuduSrc/TuduCache.h; sourceTree = "<group>"; };
+		A1D00BB619B6E98A0076A542 /* TuduCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TuduCache.m; path = ../tuduSrc/TuduCache.m; sourceTree = "<group>"; };
+		A1D00BB819B6FA750076A542 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A1D00BB919B6FA750076A542 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A1D00BBA19B6FA750076A542 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C4C51B541613CE0800959FDC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../tuduSrc/Default.png; sourceTree = "<group>"; };
+		C4C51B551613CE0800959FDC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../tuduSrc/Default-568h@2x.png"; sourceTree = "<group>"; };
+		C4C51B561613CE0800959FDC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../tuduSrc/Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09ABC06A13A1D52D009C3FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A22B1F19B941F000F76A00 /* Accelerate.framework in Frameworks */,
+				A1D00BBB19B6FA750076A542 /* AddressBook.framework in Frameworks */,
+				A1D00BBC19B6FA750076A542 /* AddressBookUI.framework in Frameworks */,
+				A1D00BBD19B6FA750076A542 /* MessageUI.framework in Frameworks */,
+				A1D00B7F19B4E7D20076A542 /* Social.framework in Frameworks */,
+				A1D00B7E19B4E7B40076A542 /* Accounts.framework in Frameworks */,
+				DD952FCB16E7F5CF00470144 /* CoreLocation.framework in Frameworks */,
+				4998650515BF305000803E05 /* StoreKit.framework in Frameworks */,
+				743D7B6D157DA60100084B67 /* CoreGraphics.framework in Frameworks */,
+				2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */,
+				099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */,
+				09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */,
+				095ACE8613C68EA300566243 /* AudioToolbox.framework in Frameworks */,
+				092354B713A1D83C00DA740F /* MobileCoreServices.framework in Frameworks */,
+				092354B513A1D7F000DA740F /* SystemConfiguration.framework in Frameworks */,
+				092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */,
+				09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */,
+				09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */,
+				094ACA0014367ACD008398F8 /* Parse.framework in Frameworks */,
+				8112B17F19741BE700CA11B8 /* ParseFacebookUtils.framework in Frameworks */,
+				817AD67C196B009E0014C796 /* Bolts.framework in Frameworks */,
+				A1A22B1419B8FB3100F76A00 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09ABC06213A1D52D009C3FCF = {
+			isa = PBXGroup;
+			children = (
+				09ABC07713A1D52D009C3FCF /* tudu */,
+				09ABC07013A1D52D009C3FCF /* Frameworks */,
+				09ABC06E13A1D52D009C3FCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09ABC06E13A1D52D009C3FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09ABC06D13A1D52D009C3FCF /* tudu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09ABC07013A1D52D009C3FCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1A22B1E19B941F000F76A00 /* Accelerate.framework */,
+				A1A22B1319B8FB3100F76A00 /* FacebookSDK.framework */,
+				A1D00BB819B6FA750076A542 /* AddressBook.framework */,
+				A1D00BB919B6FA750076A542 /* AddressBookUI.framework */,
+				A1D00BBA19B6FA750076A542 /* MessageUI.framework */,
+				6372FF571613CC47002132AF /* AdSupport.framework */,
+				6372FF551613CC42002132AF /* Social.framework */,
+				6372FF521613CC3C002132AF /* Accounts.framework */,
+				095ACE8513C68EA300566243 /* AudioToolbox.framework */,
+				092354B213A1D7EB00DA740F /* CFNetwork.framework */,
+				743D7B6C157DA60100084B67 /* CoreGraphics.framework */,
+				97E18B1E1624CB5700B17A67 /* CoreLocation.framework */,
+				09ABC07313A1D52D009C3FCF /* Foundation.framework */,
+				6332375315E438E900AE2736 /* libsqlite3.dylib */,
+				099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */,
+				092354B613A1D83C00DA740F /* MobileCoreServices.framework */,
+				817AD67B196B009E0014C796 /* Bolts.framework */,
+				094AC9FF14367ACD008398F8 /* Parse.framework */,
+				8112B17E19741BE700CA11B8 /* ParseFacebookUtils.framework */,
+				2FCDD6AF14A573F500295AAC /* QuartzCore.framework */,
+				09BEF34B13D51C3F001BBCDB /* Security.framework */,
+				4998650415BF305000803E05 /* StoreKit.framework */,
+				092354B413A1D7F000DA740F /* SystemConfiguration.framework */,
+				09ABC07113A1D52D009C3FCF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09ABC07713A1D52D009C3FCF /* tudu */ = {
+			isa = PBXGroup;
+			children = (
+				09ABC08013A1D52D009C3FCF /* TuduAppDelegate.h */,
+				A11D19DC1A97FE3D000909A8 /* TuduAppDelegate.m */,
+				A1AF77F219BFB92600535C45 /* Feeds */,
+				A1AF77F019BFB88500535C45 /* FriendsListViewControllers */,
+				A1AF77F619BFBAE600535C45 /* General View Controllers */,
+				A1AF77F519BFBAB500535C45 /* Welcome View Controllers */,
+				A1AF77F319BFB96C00535C45 /* Cells & Cell Views */,
+				A1AF77F419BFB9F900535C45 /* Utility Files */,
+				09ABC07813A1D52D009C3FCF /* Supporting Files */,
+			);
+			name = tudu;
+			path = ParseStarterProject;
+			sourceTree = "<group>";
+		};
+		09ABC07813A1D52D009C3FCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1A34C1819CDCEB80043A524 /* Basketball.jpg */,
+				A19C839E19CA0D8D00993781 /* StainlessSteel.jpg */,
+				A19C839C19CA0C6D00993781 /* TuduLogo.png */,
+				A19C839619C8D77200993781 /* ButtonFooterCellClicked.png */,
+				A19C839A19C8ED1500993781 /* BackgroundWood.jpg */,
+				A19C839419C7777E00993781 /* ButtonFooterCell.png */,
+				A19C838D19C55EBA00993781 /* BlueJeansBackground.jpg */,
+				A1AF781819C397C300535C45 /* BackgroundLogin.png */,
+				A1AF780C19C176F400535C45 /* IconCreate.png */,
+				A1AF780D19C176F400535C45 /* IconProfile.png */,
+				A1AF780E19C176F400535C45 /* IconSearch.png */,
+				A1AF780A19C175F000535C45 /* IconActivityTimeline.png */,
+				A1AF780619C168A200535C45 /* DefaultDisplayCellBackground.jpg */,
+				A1AF780419C15BF500535C45 /* BackgroundLeather.png */,
+				A1AF77FF19C0DB3A00535C45 /* ButtonNext.png */,
+				A1AF77FB19C0D98600535C45 /* ButtonInvite.png */,
+				A1AF780819C1748100535C45 /* IconHome.png */,
+				A1AF77FC19C0D98600535C45 /* ButtonInvited.png */,
+				A1AF77E819BF984200535C45 /* ButtonFollowing.png */,
+				A1AF77E619BF980E00535C45 /* ButtonFollow.png */,
+				A1AF77E419BF948A00535C45 /* AttendingTicket.png */,
+				A1AF77E219BF595400535C45 /* AttendingCircle.png */,
+				A1AF77E019BC396500535C45 /* IconComment.png */,
+				A1AF77DE19BB7D1500535C45 /* AvatarPlaceholder.png */,
+				A1AF77DC19BB6C0100535C45 /* BackgroundComments.png */,
+				A1AF77DA19BB6B6200535C45 /* buttonLikeSelected.png */,
+				A1AF77D819BB6B4400535C45 /* buttonLike.png */,
+				A1AF77D619BB676F00535C45 /* EventDisplayPlaceholder.png */,
+				C4C51B541613CE0800959FDC /* Default.png */,
+				C4C51B561613CE0800959FDC /* Default@2x.png */,
+				C4C51B551613CE0800959FDC /* Default-568h@2x.png */,
+				09ABC07913A1D52D009C3FCF /* tudu-Info.plist */,
+				09144A7213C2997E00388B00 /* Entitlements.plist */,
+				09ABC07A13A1D52D009C3FCF /* InfoPlist.strings */,
+				09ABC07D13A1D52D009C3FCF /* tudu-Prefix.pch */,
+				09ABC07E13A1D52D009C3FCF /* main.m */,
+				09ABC08613A1D52E009C3FCF /* ParseStarterProjectViewController.h */,
+				09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1AF77F019BFB88500535C45 /* FriendsListViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1D00B8F19B6B0300076A542 /* TuduFriendsListViewController.h */,
+				A1D00B9019B6B0300076A542 /* TuduFriendsListViewController.m */,
+				A1AF77ED19BFB80900535C45 /* TuduFollowFriendsListViewController.h */,
+				A1AF77EE19BFB80900535C45 /* TuduFollowFriendsListViewController.m */,
+				A1AF77EA19BFB77D00535C45 /* TuduInviteFriendsListViewController.h */,
+				A1AF77EB19BFB77D00535C45 /* TuduInviteFriendsListViewController.m */,
+			);
+			name = FriendsListViewControllers;
+			sourceTree = "<group>";
+		};
+		A1AF77F219BFB92600535C45 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				A1D00B7B19B4E5280076A542 /* TuduActivityFeedViewController.h */,
+				A1D00B7C19B4E5280076A542 /* TuduActivityFeedViewController.m */,
+				A1D00B8619B6AEB30076A542 /* TuduEventFeedViewController.h */,
+				A1D00B8719B6AEB30076A542 /* TuduEventFeedViewController.m */,
+				A1D00B7819B4E4AE0076A542 /* TuduHomeViewController.h */,
+				A1D00B7919B4E4AE0076A542 /* TuduHomeViewController.m */,
+			);
+			name = Feeds;
+			sourceTree = "<group>";
+		};
+		A1AF77F319BFB96C00535C45 /* Cells & Cell Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1D00B9519B6B1CE0076A542 /* TuduNextButtonItem.h */,
+				A1D00B9619B6B1CE0076A542 /* TuduNextButtonItem.m */,
+				A1A34C1519CC86170043A524 /* TuduNumberTitleButton.h */,
+				A1A34C1619CC86170043A524 /* TuduNumberTitleButton.m */,
+				A1D00B8319B6AD030076A542 /* EventHeaderView.h */,
+				A1D00B8419B6AD030076A542 /* EventHeaderView.m */,
+				A1A734BE19D0AB46002077D8 /* TuduMultiUserActivityCell.h */,
+				A1A734BF19D0ADBF002077D8 /* TuduMultiUserActivityCell.m */,
+				A160587419D33AEC00C61928 /* TuduProfileTableHeaderView.h */,
+				A160587519D33B1400C61928 /* TuduProfileTableHeaderView.m */,
+				A1A734BB19CFD463002077D8 /* TuduActivityCell.h */,
+				A1A734BC19CFD4CC002077D8 /* TuduActivityCell.m */,
+				A1A734B819CFD276002077D8 /* TuduBaseTextCell.h */,
+				A1A734B919CFD379002077D8 /* TuduBaseTextCell.m */,
+				A1D00B8019B6AC210076A542 /* EventFooterCell.h */,
+				A1D00B8119B6ACC40076A542 /* EventFooterCell.m */,
+				A1A34C1219CB39780043A524 /* TuduScrollView.h */,
+				A1A34C1319CB39780043A524 /* TuduScrollView.m */,
+				A1D00B9819B6B20E0076A542 /* TuduProfileImageView.h */,
+				A1D00B9919B6B20E0076A542 /* TuduProfileImageView.m */,
+				A1D00BB219B6E5B70076A542 /* EventDisplayCell.h */,
+				A1D00BB319B6E5B70076A542 /* EventDisplayCell.m */,
+				A1D00B8919B6AF680076A542 /* TuduFriendSelectorCell.h */,
+				A1D00B8A19B6AF680076A542 /* TuduFriendSelectorCell.m */,
+				A1D00B8C19B6AFB20076A542 /* TuduFollowCell.h */,
+				A1D00B8D19B6AFB20076A542 /* TuduFollowCell.m */,
+				A1D00B9219B6B0F00076A542 /* TuduInviteCell.h */,
+				A1D00B9319B6B0F00076A542 /* TuduInviteCell.m */,
+			);
+			name = "Cells & Cell Views";
+			sourceTree = "<group>";
+		};
+		A1AF77F419BFB9F900535C45 /* Utility Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1D00BB519B6E98A0076A542 /* TuduCache.h */,
+				A1D00BB619B6E98A0076A542 /* TuduCache.m */,
+				A1A34C1A19CDDAE30043A524 /* ThemeAndStyle.h */,
+				A1A34C1B19CDDAE30043A524 /* ThemeAndStyle.m */,
+				A1D00B9B19B6B3240076A542 /* Utility.h */,
+				A1D00B9C19B6B3240076A542 /* Utility.m */,
+				A1D00B9E19B6B41D0076A542 /* Constants.h */,
+				A1D00B9F19B6B44F0076A542 /* Constants.m */,
+				A1A22B1519B92B7000F76A00 /* MBProgressHUD.h */,
+				A1A22B1619B92B7000F76A00 /* MBProgressHUD.m */,
+				A1A22B1819B938E900F76A00 /* Reachability.h */,
+				A1A22B1919B938E900F76A00 /* Reachability.m */,
+				A1D00BA219B6B4C40076A542 /* UIImage+ResizeAdditions.m */,
+				A1D00BA119B6B4A70076A542 /* UIImage+ResizeAdditions.h */,
+				A1D00BA619B6B5570076A542 /* UIImage+RoundedCornerAdditions.h */,
+				A1D00BA719B6B5880076A542 /* UIImage+RoundedCornerAdditions.m */,
+				A1D00BA919B6B5A70076A542 /* UIImage+AlphaAdditions.h */,
+				A1D00BAA19B6B5B20076A542 /* UIImage+AlphaAdditions.m */,
+				A1A22B1B19B93DFE00F76A00 /* UIImage+ImageEffects.h */,
+				A1A22B1C19B93DFE00F76A00 /* UIImage+ImageEffects.m */,
+				A1D00BAC19B6B5C30076A542 /* UIImage+Alpha.h */,
+				A1D00BAD19B6B5D50076A542 /* UIImage+Alpha.m */,
+				A1D00BAF19B6E4700076A542 /* TTTTimeIntervalFormatter.h */,
+				A1D00BB019B6E4700076A542 /* TTTTimeIntervalFormatter.m */,
+			);
+			name = "Utility Files";
+			sourceTree = "<group>";
+		};
+		A1AF77F519BFBAB500535C45 /* Welcome View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1D00B6919B4DBA60076A542 /* TuduLoginViewController.h */,
+				A1D00B6A19B4DBA60076A542 /* TuduLoginViewController.m */,
+				A1D00B6F19B4E2440076A542 /* TuduWelcomeViewController.h */,
+				A1D00B7019B4E2440076A542 /* TuduWelcomeViewController.m */,
+			);
+			name = "Welcome View Controllers";
+			sourceTree = "<group>";
+		};
+		A1AF77F619BFBAE600535C45 /* General View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1AF781519C29E5C00535C45 /* TuduInviteDescriptionViewController.h */,
+				A1AF781619C29E5C00535C45 /* TuduInviteDescriptionViewController.m */,
+				A160587B19D8F76B00C61928 /* TuduCommentsViewController.h */,
+				A160587C19D8F7AE00C61928 /* TuduCommentsViewController.m */,
+				A19C838F19C7482200993781 /* GlassView.h */,
+				A19C839019C7482200993781 /* GlassView.m */,
+				A1D00B6C19B4DE730076A542 /* TuduEventCreatorViewController.h */,
+				A1D00B6D19B4DE730076A542 /* TuduEventCreatorViewController.m */,
+				A1A34C1D19CE13EE0043A524 /* TuduEventEditorViewController.h */,
+				A1A34C1E19CE13EE0043A524 /* TuduEventEditorViewController.m */,
+				A1AF781219C1776A00535C45 /* TuduEventDetailsViewController.h */,
+				A1AF781319C1776A00535C45 /* TuduEventDetailsViewController.m */,
+				A1A734B419CFAD07002077D8 /* TuduActivityTableView.h */,
+				A1A734B519CFAD40002077D8 /* TuduActivityTableView.m */,
+				A1D00B7519B4E49A0076A542 /* TuduProfileViewController.h */,
+				A1D00B7619B4E49A0076A542 /* TuduProfileViewController.m */,
+				A1D00B7219B4E4810076A542 /* TuduSearchViewController.h */,
+				A1D00B7319B4E4810076A542 /* TuduSearchViewController.m */,
+				A1AF780119C0DD0800535C45 /* TuduReviewEventCreationViewController.h */,
+				A1AF780219C0DD0800535C45 /* TuduReviewEventCreationViewController.m */,
+				A1D00B6619B4D8D20076A542 /* TuduTabBarController.h */,
+				A1D00B6719B4D8D20076A542 /* TuduTabBarController.m */,
+			);
+			name = "General View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09ABC06C13A1D52D009C3FCF /* tudu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "tudu" */;
+			buildPhases = (
+				09ABC06913A1D52D009C3FCF /* Sources */,
+				09ABC06A13A1D52D009C3FCF /* Frameworks */,
+				09ABC06B13A1D52D009C3FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tudu;
+			productName = ParseStarterProject;
+			productReference = 09ABC06D13A1D52D009C3FCF /* tudu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09ABC06413A1D52D009C3FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					09ABC06C13A1D52D009C3FCF = {
+						DevelopmentTeam = 8BA9QQSUE9;
+					};
+				};
+			};
+			buildConfigurationList = 09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "tudu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09ABC06213A1D52D009C3FCF;
+			productRefGroup = 09ABC06E13A1D52D009C3FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09ABC06C13A1D52D009C3FCF /* tudu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09ABC06B13A1D52D009C3FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AF780719C168A200535C45 /* DefaultDisplayCellBackground.jpg in Resources */,
+				09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */,
+				A1AF77FE19C0D98600535C45 /* ButtonInvited.png in Resources */,
+				09144A7313C2997E00388B00 /* Entitlements.plist in Resources */,
+				A19C839B19C8ED1500993781 /* BackgroundWood.jpg in Resources */,
+				A19C839D19CA0C6D00993781 /* TuduLogo.png in Resources */,
+				A1AF77E319BF595500535C45 /* AttendingCircle.png in Resources */,
+				A1AF77DD19BB6C0100535C45 /* BackgroundComments.png in Resources */,
+				C4C51B571613CE0800959FDC /* Default.png in Resources */,
+				A1AF77DB19BB6B6200535C45 /* buttonLikeSelected.png in Resources */,
+				A1AF77E719BF980E00535C45 /* ButtonFollow.png in Resources */,
+				A1AF780919C1748100535C45 /* IconHome.png in Resources */,
+				C4C51B581613CE0800959FDC /* Default-568h@2x.png in Resources */,
+				A1AF77E919BF984200535C45 /* ButtonFollowing.png in Resources */,
+				A1AF77D919BB6B4400535C45 /* buttonLike.png in Resources */,
+				C4C51B591613CE0800959FDC /* Default@2x.png in Resources */,
+				A1A34C1919CDCEB80043A524 /* Basketball.jpg in Resources */,
+				A1AF77DF19BB7D1500535C45 /* AvatarPlaceholder.png in Resources */,
+				A1AF77D719BB676F00535C45 /* EventDisplayPlaceholder.png in Resources */,
+				A1AF77E119BC396500535C45 /* IconComment.png in Resources */,
+				A1AF780519C15BF500535C45 /* BackgroundLeather.png in Resources */,
+				A19C839F19CA0D8D00993781 /* StainlessSteel.jpg in Resources */,
+				A1AF77FD19C0D98600535C45 /* ButtonInvite.png in Resources */,
+				A19C839519C7777E00993781 /* ButtonFooterCell.png in Resources */,
+				A1AF780019C0DB3A00535C45 /* ButtonNext.png in Resources */,
+				A1AF781019C176F400535C45 /* IconProfile.png in Resources */,
+				A19C839719C8D77200993781 /* ButtonFooterCellClicked.png in Resources */,
+				A1AF780F19C176F400535C45 /* IconCreate.png in Resources */,
+				A1AF77E519BF948A00535C45 /* AttendingTicket.png in Resources */,
+				A1AF781119C176F400535C45 /* IconSearch.png in Resources */,
+				A19C838E19C55EBA00993781 /* BlueJeansBackground.jpg in Resources */,
+				A1AF780B19C175F000535C45 /* IconActivityTimeline.png in Resources */,
+				A1AF781919C397C400535C45 /* BackgroundLogin.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09ABC06913A1D52D009C3FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A22B1D19B93DFE00F76A00 /* UIImage+ImageEffects.m in Sources */,
+				A1A734C019D0ADBF002077D8 /* TuduMultiUserActivityCell.m in Sources */,
+				A1D00BA819B6B5880076A542 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				A1D00B8E19B6AFB20076A542 /* TuduFollowCell.m in Sources */,
+				A1A34C1719CC86170043A524 /* TuduNumberTitleButton.m in Sources */,
+				A1D00B8B19B6AF680076A542 /* TuduFriendSelectorCell.m in Sources */,
+				09ABC07F13A1D52D009C3FCF /* main.m in Sources */,
+				A1D00B6B19B4DBA60076A542 /* TuduLoginViewController.m in Sources */,
+				A160587619D33B1400C61928 /* TuduProfileTableHeaderView.m in Sources */,
+				A1AF781419C1776A00535C45 /* TuduEventDetailsViewController.m in Sources */,
+				A11D19DD1A97FE3D000909A8 /* TuduAppDelegate.m in Sources */,
+				A1D00B9D19B6B3240076A542 /* Utility.m in Sources */,
+				A1A22B1719B92B7000F76A00 /* MBProgressHUD.m in Sources */,
+				A1D00B8819B6AEB30076A542 /* TuduEventFeedViewController.m in Sources */,
+				A1D00B9A19B6B20E0076A542 /* TuduProfileImageView.m in Sources */,
+				A1AF77EF19BFB80900535C45 /* TuduFollowFriendsListViewController.m in Sources */,
+				A1A34C1F19CE13EE0043A524 /* TuduEventEditorViewController.m in Sources */,
+				A1AF77EC19BFB77D00535C45 /* TuduInviteFriendsListViewController.m in Sources */,
+				A1D00BA319B6B4C40076A542 /* UIImage+ResizeAdditions.m in Sources */,
+				A1A22B1A19B938E900F76A00 /* Reachability.m in Sources */,
+				A1D00B9419B6B0F00076A542 /* TuduInviteCell.m in Sources */,
+				A1A734BA19CFD379002077D8 /* TuduBaseTextCell.m in Sources */,
+				09ABC08813A1D52E009C3FCF /* ParseStarterProjectViewController.m in Sources */,
+				A1AF781719C29E5C00535C45 /* TuduInviteDescriptionViewController.m in Sources */,
+				A1D00BAE19B6B5D50076A542 /* UIImage+Alpha.m in Sources */,
+				A1D00B8219B6ACC40076A542 /* EventFooterCell.m in Sources */,
+				A1D00BB719B6E98A0076A542 /* TuduCache.m in Sources */,
+				A1D00BA019B6B44F0076A542 /* Constants.m in Sources */,
+				A1AF780319C0DD0800535C45 /* TuduReviewEventCreationViewController.m in Sources */,
+				A1D00B7419B4E4810076A542 /* TuduSearchViewController.m in Sources */,
+				A160587D19D8F7AF00C61928 /* TuduCommentsViewController.m in Sources */,
+				A1D00BB119B6E4700076A542 /* TTTTimeIntervalFormatter.m in Sources */,
+				A1D00BB419B6E5B70076A542 /* EventDisplayCell.m in Sources */,
+				A1D00B8519B6AD030076A542 /* EventHeaderView.m in Sources */,
+				A1A34C1419CB39790043A524 /* TuduScrollView.m in Sources */,
+				A1D00B6E19B4DE730076A542 /* TuduEventCreatorViewController.m in Sources */,
+				A1D00B6819B4D8D20076A542 /* TuduTabBarController.m in Sources */,
+				A1A34C1C19CDDAE30043A524 /* ThemeAndStyle.m in Sources */,
+				A1D00B7A19B4E4AE0076A542 /* TuduHomeViewController.m in Sources */,
+				A1A734BD19CFD4CC002077D8 /* TuduActivityCell.m in Sources */,
+				A19C839119C7482200993781 /* GlassView.m in Sources */,
+				A1A734B619CFAD40002077D8 /* TuduActivityTableView.m in Sources */,
+				A1D00BAB19B6B5B20076A542 /* UIImage+AlphaAdditions.m in Sources */,
+				A1D00B7719B4E49A0076A542 /* TuduProfileViewController.m in Sources */,
+				A1D00B9719B6B1CE0076A542 /* TuduNextButtonItem.m in Sources */,
+				A1D00B7119B4E2440076A542 /* TuduWelcomeViewController.m in Sources */,
+				A1D00B7D19B4E5280076A542 /* TuduActivityFeedViewController.m in Sources */,
+				A1D00B9119B6B0300076A542 /* TuduFriendsListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09ABC07A13A1D52D009C3FCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09ABC07B13A1D52D009C3FCF /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ../tuduSrc;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09ABC08C13A1D52E009C3FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09ABC08D13A1D52E009C3FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		09ABC08F13A1D52E009C3FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+					/Users/giancosta/Documents/FacebookSDK,
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParseStarterProject/tudu-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "ParseStarterProject/tudu-Info.plist";
+				PRODUCT_NAME = tudu;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09ABC09013A1D52E009C3FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+					/Users/giancosta/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParseStarterProject/tudu-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "ParseStarterProject/tudu-Info.plist";
+				PRODUCT_NAME = tudu;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "tudu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABC08C13A1D52E009C3FCF /* Debug */,
+				09ABC08D13A1D52E009C3FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "tudu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABC08F13A1D52E009C3FCF /* Debug */,
+				09ABC09013A1D52E009C3FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09ABC06413A1D52D009C3FCF /* Project object */;
+}
