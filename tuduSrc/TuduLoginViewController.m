@@ -66,7 +66,7 @@
 
 }
 -(void)loginButtonTouchHandler : (id)sender {
-    [PFUser logInWithUsernameInBackground:@"gcosta" password:@"Carlo1992"
+    [PFUser logInWithUsernameInBackground:@"gcosta" password:@"userPass"
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             // Do stuff after successful login.
